@@ -1,14 +1,11 @@
 # Inlab-Assignment-1
 The German International University
 Faculty of Informatics and Computer Science
-[Instructor Name]
+Dr. Nada Sharaf
 
 Programming III, Winter Semester 2024/2025
-Milestone 01
+In-lab assignment 01
 
-Deadline: [Insert Date & Time]
-
----
 
 ## General Description:
 
