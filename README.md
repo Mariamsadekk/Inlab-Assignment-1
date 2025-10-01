@@ -46,7 +46,7 @@ Represents an enclosure that contains multiple animals.
 
 * **Attributes** (all private):
 
-  * Dynamic array of `Animal*` (supporting polymorphism).
+  * Dynamic array of `Animal*`
   * `int capacity`
   * `int currentCount`
 
@@ -87,7 +87,7 @@ Manages the overall system of enclosures and visitors.
 
 * A **header file** for each of the above classes.
 
-* A single **source file (.cpp)** containing the implementations.
+* A single **source file (.cpp)** containing all the implementations.
 
 * A `main()` function that:
 
@@ -95,15 +95,15 @@ Manages the overall system of enclosures and visitors.
   * Adds animals to at least one enclosure.
   * Displays the enclosures and their animals.
 
-* Submit all files compressed into a **.zip file** with the following format:
+*Include your name on a separate .txt file in the same format:
   `TeamNumber_StudentName_StudentID.zip`
 
 ---
 
 ## Important Notes
 
-* **Cheating = 0 in the project.**
-* **Fully AI-generated code = 0 in the project.**
+* **Cheating = 0 in the assignment.**
+* **AI-generated code = 0 in the project.**
 * All attributes in classes must be **private** with **setters and getters**.
 * Each class must have:
 
@@ -115,7 +115,7 @@ Manages the overall system of enclosures and visitors.
 
 ---
 
-## Example Console Output (for Milestone 01 testing)
+## Example Console Output (for In-lab assignment 1 testing)
 
 ```
 Zoo initialized successfully.
@@ -129,7 +129,4 @@ Visitor Info:
 Name: Sarah Ali
 Tickets Bought: 3
 ```
-
 ---
-
-**End of Milestone 01 Document**
