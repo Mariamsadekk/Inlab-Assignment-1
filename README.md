@@ -11,7 +11,7 @@ In-lab assignment 01
 
 In this project, you are tasked with implementing a simple **Zoo Management System** as a console application. The system simulates animals in a zoo, their enclosures, and visitor details. The purpose of this milestone is to practice **Object-Oriented Programming (OOP)** concepts such as **classes, inheritance, encapsulation, constructors, destructors, dynamic memory allocation, and separation of interface/implementation using header and source files**.
 
-This milestone focuses on the **structure of the system**. Full functionality (feeding schedules, visitor-animal interactions, and ticketing system) will be implemented in **Milestone 02**.
+This milestone focuses on the **structure of the system**. Full functionality (feeding schedules, visitor-animal interactions, and ticketing system) will be implemented in **In-lab assignment 02**.
 
 ---
 
@@ -111,7 +111,7 @@ Manages the overall system of enclosures and visitors.
   * A **parameterized constructor**
   * A **destructor** (even if empty)
 * Arrays and objects must be **dynamically allocated**.
-* Additional functionality (feeding schedule, interactions, ticketing) will be introduced in **Milestone 02**.
+* Additional functionality (feeding schedule, interactions, ticketing) will be introduced in ****In-lab assignment 02****.
 
 ---
 
