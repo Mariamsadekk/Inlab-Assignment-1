@@ -29,15 +29,15 @@ Represents a generic animal in the zoo. This class will serve as the **base clas
 
 * **Methods**:
 
-  * `display()`: Displays the animal’s name, age, and hunger status ("Hungry"/"Not Hungry").
-  * `feed()`: Sets `isHungry` to `false`.
+  * `display()`: Displays the animal’s name, age, and hunger status.
+  * `feed()`
 
 * **Subclasses** (inherit from `Animal`):
 
   * **Mammal**: Adds `string furColor`.
   * **Bird**: Adds `float wingSpan`.
   * **Reptile**: Adds `bool isVenomous`.
-
+Note: “Venomous” means able to produce venom (poison) or not.
 ---
 
 ### b) **Enclosure Class**
