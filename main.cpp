@@ -1,4 +1,4 @@
-// Animal.h - STARTER CODE
+/ Animal.h - STARTER CODE
 #ifndef ANIMAL_H
 #define ANIMAL_H
 
