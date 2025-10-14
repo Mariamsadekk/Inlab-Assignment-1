@@ -1,213 +1,3 @@
-/ Animal.h - STARTER CODE
-#ifndef ANIMAL_H
-#define ANIMAL_H
-
-#include <string>
-#include <iostream>
-using namespace std;
-
-class Animal {
-private:
-    // TODO: Add private attributes
-    // - string name
-    // - int age  
-    // - bool isHungry
-
-public:
-    // TODO: Implement constructors
-    Animal();
-    Animal(string name, int age, bool isHungry);
-    
-    // TODO: Implement destructor
-    virtual ~Animal();
-    
-    // TODO: Implement methods
-    virtual void display() const;
-    void feed();
-    
-    // TODO: Implement getters and setters
-    string getName() const;
-    void setName(const string& name);
-    int getAge() const;
-    void setAge(int age);
-    bool getIsHungry() const;
-    void setIsHungry(bool hungry);
-};
-
-// Mammal Class - inherits from Animal
-class Mammal : public Animal {
-private:
-    // TODO: Add private attribute
-    // - string furColor
-
-public:
-    // TODO: Implement constructors
-    Mammal();
-    Mammal(string name, int age, bool isHungry, string furColor);
-    
-    // TODO: Implement destructor
-    ~Mammal();
-    
-    // TODO: Override display method to show fur color
-    void display() const override;
-    
-    // TODO: Implement getters and setters for furColor
-    string getFurColor() const;
-    void setFurColor(const string& furColor);
-};
-
-// Bird Class - inherits from Animal
-class Bird : public Animal {
-private:
-    // TODO: Add private attribute
-    // - float wingSpan
-
-public:
-    // TODO: Implement constructors
-    Bird();
-    Bird(string name, int age, bool isHungry, float wingSpan);
-    
-    // TODO: Implement destructor
-    ~Bird();
-    
-    // TODO: Override display method to show wing span
-    void display() const override;
-    
-    // TODO: Implement getters and setters for wingSpan
-    float getWingSpan() const;
-    void setWingSpan(float wingSpan);
-};
-
-// Reptile Class - inherits from Animal
-class Reptile : public Animal {
-private:
-    // TODO: Add private attribute
-    // - bool isVenomous
-
-public:
-    // TODO: Implement constructors
-    Reptile();
-    Reptile(string name, int age, bool isHungry, bool isVenomous);
-    
-    // TODO: Implement destructor
-    ~Reptile();
-    
-    // TODO: Override display method to show venomous status
-    void display() const override;
-    
-    // TODO: Implement getters and setters for isVenomous
-    bool getIsVenomous() const;
-    void setIsVenomous(bool venomous);
-};
-
-#endif
-
-// Enclosure.h - STARTER CODE
-#ifndef ENCLOSURE_H
-#define ENCLOSURE_H
-
-#include "Animal.h"
-
-class Enclosure {
-private:
-    // TODO: Add private attributes
-    // - Animal** animals (dynamic array of Animal pointers)
-    // - int capacity
-    // - int currentCount
-
-public:
-    // TODO: Implement constructors
-    Enclosure();
-    Enclosure(int capacity);
-    
-    // TODO: Implement destructor (must delete all animals)
-    ~Enclosure();
-    
-    // TODO: Implement methods
-    bool addAnimal(Animal* animal);
-    void displayAnimals() const;
-    
-    // TODO: Implement getters and setters
-    int getCapacity() const;
-    void setCapacity(int capacity);
-    int getCurrentCount() const;
-    Animal* getAnimal(int index) const;
-};
-
-#endif
-
-// Visitor.h - STARTER CODE
-#ifndef VISITOR_H
-#define VISITOR_H
-
-#include <string>
-using namespace std;
-
-class Visitor {
-private:
-    // TODO: Add private attributes
-    // - string visitorName
-    // - int ticketsBought
-
-public:
-    // TODO: Implement constructors
-    Visitor();
-    Visitor(string visitorName, int ticketsBought);
-    
-    // TODO: Implement destructor
-    ~Visitor();
-    
-    // TODO: Implement methods
-    void displayInfo() const;
-    
-    // TODO: Implement getters and setters
-    string getVisitorName() const;
-    void setVisitorName(const string& name);
-    int getTicketsBought() const;
-    void setTicketsBought(int tickets);
-};
-
-#endif
-
-// Zoo.h - STARTER CODE
-#ifndef ZOO_H
-#define ZOO_H
-
-#include "Enclosure.h"
-#include "Visitor.h"
-
-class Zoo {
-private:
-    // TODO: Add private attributes
-    // - Enclosure** enclosures (dynamic array)
-    // - int numberOfEnclosures
-    // - Visitor** visitors (dynamic array)  
-    // - int numberOfVisitors
-
-public:
-    // TODO: Implement constructors
-    Zoo();
-    Zoo(int numEnclosures, int numVisitors);
-    
-    // TODO: Implement destructor (must clean up all dynamic memory)
-    ~Zoo();
-    
-    // TODO: Implement methods
-    void initializeZoo();
-    void showZooStatus() const;
-    bool addEnclosure(Enclosure* enclosure);
-    bool addVisitor(Visitor* visitor);
-    
-    // TODO: Implement getters
-    int getNumberOfEnclosures() const;
-    int getNumberOfVisitors() const;
-    Enclosure* getEnclosure(int index) const;
-    Visitor* getVisitor(int index) const;
-};
-
-#endif
-
-// main.cpp - STARTER CODE
 #include "Animal.h"
 #include "Enclosure.h"
 #include "Visitor.h"
@@ -230,7 +20,7 @@ Animal::~Animal() {
     // TODO: Cleanup if needed
 }
 
-void Animal::display() const {
+void Animal::display(){
     // TODO: Display animal info in format: "- Name (Age: X, Hungry/Not Hungry)"
 }
 
@@ -239,12 +29,12 @@ void Animal::feed() {
 }
 
 // TODO: Implement all getter and setter methods
-string Animal::getName() const {
+string Animal::getName() {
     // TODO: Return name
     return "";
 }
 
-void Animal::setName(const string& name) {
+void Animal::setName(string name) {
     // TODO: Set name
 }
 
@@ -265,7 +55,7 @@ Mammal::~Mammal() {
     // TODO: Cleanup if needed
 }
 
-void Mammal::display() const {
+void Mammal::display()  {
     // TODO: Call parent display() then add fur color info
 }
 
@@ -304,7 +94,7 @@ bool Enclosure::addAnimal(Animal* animal) {
     return false;
 }
 
-void Enclosure::displayAnimals() const {
+void Enclosure::displayAnimals()   {
     // TODO: Loop through all animals and call their display() method
 }
 
@@ -339,7 +129,7 @@ void Zoo::initializeZoo() {
     // TODO: Create at least one visitor: Sarah Ali with 3 tickets
 }
 
-void Zoo::showZooStatus() const {
+void Zoo::showZooStatus()   {
     // TODO: Display all enclosures and their animals
     // TODO: Display all visitors
     // Format should match the expected output in the assignment
