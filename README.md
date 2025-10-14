@@ -4,7 +4,7 @@ Faculty of Informatics and Computer Science
 
 Dr. Nada Sharaf
 
-Programming III, Winter Semester 2025/2026
+Programming III, Winter Semester 2025/26
 
 In-lab assignment 01
 
